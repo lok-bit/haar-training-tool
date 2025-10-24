@@ -41,30 +41,6 @@ This repository contains the **first stage** of a two-part LPR system:
 
 ---
 
-## Directory Layout (Suggested)
-.
-├─ data/
-│ ├─ pos_raw/ # originals with plates
-│ ├─ neg_raw/ # backgrounds (no plates)
-│ ├─ pos/ # resized positives (e.g., BMP)
-│ ├─ neg/ # resized negatives (grayscale)
-│ └─ test/ # images for quick validation
-├─ annot/
-│ ├─ info.txt # positive labels (x y w h)
-│ └─ tools/ # e.g., objectmarker
-├─ bg/
-│ └─ bg.txt # negative list
-├─ vec/
-│ └─ carplate.vec
-├─ training/
-│ ├─ cascades/
-│ └─ logs/
-├─ model/
-│ └─ haar_carplate.xml
-└─ scripts/
-
----
-
 ## Requirements
 
 - **OpenCV** with `opencv_createsamples` and `opencv_traincascade`
@@ -94,6 +70,7 @@ opencv_traincascade -data training\cascades ^
 :: 4) Convert to XML (example tool/script)
 scripts\convert_to_xml.bat training\cascades model\haar_carplate.xml <WIN_W> <WIN_H>
 
+```
 ---
 
 ##Notes & Tips
