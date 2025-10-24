@@ -71,6 +71,7 @@ opencv_traincascade -data training\cascades ^
 scripts\convert_to_xml.bat training\cascades model\haar_carplate.xml <WIN_W> <WIN_H>
 
 ```
+---
 ## Notes & Tips
 
 - Consistent sizes & formats help the Haar features focus on intensity/edge contrasts.
