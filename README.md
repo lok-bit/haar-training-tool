@@ -90,4 +90,3 @@ scripts\convert_to_xml.bat training\cascades model\haar_carplate.xml <WIN_W> <WI
 - OpenCV (Haar features, training utilities)
 - Community tutorials and tools for cascade training workflows
   
----
