@@ -4,7 +4,7 @@
 This repository contains the **first stage** of a two-part LPR system:
 
 - **Part 1 (this repo):** Build a Haar feature cascade to **detect the plate ROI** and export `haar_carplate.xml`.
-- **Part 2 (separate repo):** Character segmentation + CNN recognition (already provided in your Part-2 repo).
+- **Part 2 (separate repo):** Character segmentation + CNN recognition.
 
 > **Output:** `model/haar_carplate.xml`, used by Part-2 to crop plate regions.
 
