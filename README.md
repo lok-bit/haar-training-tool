@@ -72,6 +72,7 @@ scripts\convert_to_xml.bat training\cascades model\haar_carplate.xml <WIN_W> <WI
 
 ```
 ---
+
 ## Notes & Tips
 
 - Consistent sizes & formats help the Haar features focus on intensity/edge contrasts.
