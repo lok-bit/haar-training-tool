@@ -73,15 +73,21 @@ scripts\convert_to_xml.bat training\cascades model\haar_carplate.xml <WIN_W> <WI
 ```
 ## Notes & Tips
 
--Consistent sizes & formats help the Haar features focus on intensity/edge contrasts.
--Label quality dominates results—review boxes; avoid cutting digits or background leakage.
--Choose a detection window ratio that roughly matches your plate geometry (new vs. old plate formats may differ).
--Keep negatives diverse (roads, cars without visible plates, backgrounds).
+- Consistent sizes & formats help the Haar features focus on intensity/edge contrasts.
+- Label quality dominates results—review boxes; avoid cutting digits or background leakage.
+- Choose a detection window ratio that roughly matches your plate geometry (new vs. old plate formats may differ).
+- Keep negatives diverse (roads, cars without visible plates, backgrounds).
+
+---
 
 ## Output
 
--model/haar_carplate.xml — the trained cascade model consumed by Part-2 for plate ROI cropping.
+- model/haar_carplate.xml — the trained cascade model consumed by Part-2 for plate ROI cropping.
+
+---
 
 ## Acknowledgements
--OpenCV (Haar features, training utilities)
--Community tutorials and tools for cascade training workflows
+- OpenCV (Haar features, training utilities)
+- Community tutorials and tools for cascade training workflows
+  
+---
