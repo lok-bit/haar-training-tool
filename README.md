@@ -49,30 +49,6 @@ This repository contains the **first stage** of a two-part LPR system:
 
 ---
 
-## Commands (Examples — adjust to your data)
-
-```bat
-:: 1) Create negative list
-python scripts/make_bg_list.py --neg_dir .\data\neg --out .\bg\bg.txt
-:: or use your batch to enumerate files
-
-:: 2) Pack positives into .vec
-opencv_createsamples -info annot\info.txt -vec vec\carplate.vec ^
-  -num <NUM_POS> -w <WIN_W> -h <WIN_H>
-
-:: 3) Train cascade
-opencv_traincascade -data training\cascades ^
-  -vec vec\carplate.vec -bg bg\bg.txt ^
-  -numPos <NUM_POS> -numNeg <NUM_NEG> -numStages <STAGES> ^
-  -featureType HAAR -w <WIN_W> -h <WIN_H> -mode ALL ^
-  -precalcValBufSize 1024 -precalcIdxBufSize 1024
-
-:: 4) Convert to XML (example tool/script)
-scripts\convert_to_xml.bat training\cascades model\haar_carplate.xml <WIN_W> <WIN_H>
-
-```
----
-
 ## Notes & Tips
 
 - Consistent sizes & formats help the Haar features focus on intensity/edge contrasts.
